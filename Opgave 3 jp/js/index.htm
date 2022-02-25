@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script> 
+</head>
+
+<body>
+    <div id="app"> 
+        <h1>String mani</h1>
+        <input id="inputField" v-model="words" placeholder="skrivher">
+        <button id="button" v-on:click="showWords()" class="btn btn-primary">show dem cases</button>
+        <button id="button" v-on:click="clearWords" class="btn btn-primary">clear</button>
+
+        <div id="outputField" v-if="words">
+            <ul>
+                    <li>{{ result }}</li>
+                    <li>{{ result2 }}</li>
+                    <li>{{ result3 }}</li>
+                    <li>{{ result4 }}</li>
+                    <li>{{ result5 }}</li>
+                    <li>{{ result6 }}</li>
+            </ul>        
+
+    </div>
+    <script src="index.js"></script>
+
+
+
+</body>
+</html>
